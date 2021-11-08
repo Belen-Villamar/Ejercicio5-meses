@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <h1>Producto_Alimenticio</h1>
+    <script>
+        function Producto_alimenticio(Codigo,Nombre,Precio){
+            this.Codigo=Codigo;
+            this.Nombre=Nombre;
+            this.Precio=Precio;
+        }
+        var producto1=new Producto_alimenticio(196,"Yogurt Griego","$ 5.50");
+        var producto2=new Producto_alimenticio(197,"Leche","$ 1.00");
+        var producto3=new Producto_alimenticio(198,"Mermelada","$ 3.70");
+        var array=[producto1,producto2,producto3];
+        for (x = 0; x < array.length; x++) {imprimeDatos(array[x])}
+        function imprimeDatos(array){
+            document.write("Código: "+array.Codigo+", ");
+            document.write("Nombre: "+array.Nombre+", ");
+            document.write("Precio: "+array.Precio+"<br>");
+        }
+    </script>
+</body>
+</html>
